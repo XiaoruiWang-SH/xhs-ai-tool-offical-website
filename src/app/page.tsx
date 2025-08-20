@@ -162,7 +162,7 @@ export default function Home() {
           <div className="flex gap-8 items-start">
             {/* Content Generation Demo */}
             <div className="flex-[1.25] space-y-6">
-              <div className="bg-muted/20 p-6 rounded-2xl border border-border">
+              <div className="p-6 rounded-2xl border border-border">
                 <h3 className="text-2xl font-semibold mb-4 flex items-center">
                   <span className="mr-3">📝</span>
                   智能内容生成
@@ -184,7 +184,7 @@ export default function Home() {
 
             {/* Mobile Display Demo */}
             <div className="flex-[0.49] space-y-6">
-              <div className="bg-muted/20 p-6 rounded-2xl border border-border">
+              <div className="p-6 rounded-2xl border border-border">
                 <h3 className="text-2xl font-semibold mb-4 flex items-center">
                   <span className="mr-3">📱</span>
                   手机端完美展示
