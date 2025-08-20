@@ -72,20 +72,6 @@ export default function Home() {
                   📺 观看演示
                 </button>
               </div>
-
-              <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-500 to-purple-500"></div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-green-500"></div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500"></div>
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-red-500 to-pink-500"></div>
-                </div>
-                <span>
-                  已有{' '}
-                  <span className="text-foreground font-semibold">10,000+</span>{' '}
-                  创作者在使用
-                </span>
-              </div>
             </div>
 
             {/* 示例展示区域 - 扇形卡牌展开 */}
@@ -171,7 +157,7 @@ export default function Home() {
                   上传图片，AI 自动分析并生成吸引人的标题和文案内容
                 </p>
                 <video
-                  className="w-full object-contain rounded-xl border border-border"
+                  className="w-full object-contain rounded-xl"
                   autoPlay
                   muted
                   loop
@@ -193,7 +179,7 @@ export default function Home() {
                   发布成功后在手机端的真实展示效果，确保内容质量
                 </p>
                 <video
-                  className="w-full object-contain rounded-xl border border-border"
+                  className="w-full object-contain rounded-xl"
                   autoPlay
                   muted
                   loop
@@ -207,127 +193,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Workflow Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          {/* AI 能力展示区域 */}
-          <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-3xl p-8 border border-border/50">
-            {/* 工作流程标题 */}
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-3">AI 驱动的一站式工作流</h3>
-              <p className="text-muted-foreground">
-                从内容创作到发布，无需复制粘贴的智能化体验
-              </p>
-            </div>
-
-            {/* 三步骤展示 - 两列布局 */}
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* 左列：步骤一和步骤二 */}
-              <div className="space-y-6">
-                {/* 第一步：文案生成 */}
-                <div className="p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                      <span className="text-xl">📝</span>
-                    </div>
-                    <h4 className="text-lg font-semibold">
-                      步骤一：智能文案生成
-                    </h4>
-                    <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs rounded-full">
-                      一键生成
-                    </span>
-                  </div>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    AI 分析图片内容，自动生成吸引眼球的标题和正文
-                  </p>
-                  <div className="relative overflow-hidden rounded-xl border border-border">
-                    <Image
-                      src="/xhs-post.png"
-                      alt="小红书文案生成界面"
-                      width={350}
-                      height={180}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                </div>
-
-                {/* 第二步：评论生成 */}
-                <div className="p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-accent/30 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                      <span className="text-xl">💬</span>
-                    </div>
-                    <h4 className="text-lg font-semibold">
-                      步骤二：AI 评论助手
-                    </h4>
-                    <span className="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">
-                      智能互动
-                    </span>
-                  </div>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    智能分析笔记内容，生成个性化、有价值的互动评论
-                  </p>
-                  <div className="relative overflow-hidden rounded-xl border border-border">
-                    <Image
-                      src="/xhs-comment.png"
-                      alt="小红书评论生成界面"
-                      width={350}
-                      height={120}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* 右列：步骤三 */}
-              <div className="flex items-center">
-                <div className="w-full p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-primary/30 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <span className="text-xl">🚀</span>
-                    </div>
-                    <h4 className="text-lg font-semibold">
-                      步骤三：一键应用发布
-                    </h4>
-                    <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                      无缝集成
-                    </span>
-                  </div>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Chrome
-                    侧边栏设计，内容直接插入编辑页面，告别复制粘贴，流水线式创作体验
-                  </p>
-                  <div className="relative overflow-hidden rounded-xl border border-border">
-                    <Image
-                      src="/xhs-extension-page.png"
-                      alt="小红书扩展界面"
-                      width={400 * 0.8}
-                      height={320 * 0.8}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 底部特色标签 */}
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <span className="px-4 py-2 bg-secondary/10 text-secondary text-sm rounded-full flex items-center gap-2">
-                ⚡ 10倍效率提升
-              </span>
-              <span className="px-4 py-2 bg-accent/10 text-accent text-sm rounded-full flex items-center gap-2">
-                🎯 零复制粘贴
-              </span>
-              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full flex items-center gap-2">
-                🤖 多AI模型支持
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
@@ -342,7 +209,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
+            <div className="p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                 <span className="text-2xl">📝</span>
               </div>
@@ -353,7 +220,7 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
+            <div className="p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                 <span className="text-2xl">💬</span>
               </div>
@@ -364,7 +231,7 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
+            <div className="p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                 <span className="text-2xl">🔄</span>
               </div>
@@ -375,7 +242,7 @@ export default function Home() {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
+            <div className="p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                 <span className="text-2xl">🤖</span>
               </div>
@@ -387,7 +254,7 @@ export default function Home() {
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
+            <div className="p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                 <span className="text-2xl">📱</span>
               </div>
@@ -398,7 +265,7 @@ export default function Home() {
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
+            <div className="p-8 rounded-2xl border border-border hover:border-secondary/50 transition-colors group">
               <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                 <span className="text-2xl">🔒</span>
               </div>
