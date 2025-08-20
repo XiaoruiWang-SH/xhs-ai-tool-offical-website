@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+materials
+xhs-ai-tool-introduction.md
+xhs-ai-tool-introduction-en.md
+CLAUDE.md
+storyShort
