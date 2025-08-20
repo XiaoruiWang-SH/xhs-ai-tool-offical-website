@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,16 +20,16 @@ export default function Home() {
             </div>
             <div className="hidden md:flex space-x-8">
               <a
-                href="#features"
-                className="hover:text-secondary transition-colors"
-              >
-                功能特色
-              </a>
-              <a
                 href="#demo"
                 className="hover:text-secondary transition-colors"
               >
                 演示视频
+              </a>
+              <a
+                href="#features"
+                className="hover:text-secondary transition-colors"
+              >
+                功能特色
               </a>
               <a
                 href="#download"
@@ -38,7 +39,9 @@ export default function Home() {
               </a>
             </div>
             <button className="bg-secondary text-background px-6 py-2 rounded-full font-medium hover:bg-secondary-hover transition-colors">
-              立即安装
+              <Link href="https://chromewebstore.google.com/detail/jbgcgabaeechheccecbaphelkhgabkbp?utm_source=officalSite">
+                立即安装
+              </Link>
             </button>
           </div>
         </div>
@@ -51,7 +54,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="text-4xl lg:text-6xl font-bold leading-tight">
-                  <div className='flex items-center gap-2.5'>
+                  <div className="flex items-center gap-2.5">
                     <Image
                       className="relative bottom-2"
                       src="/icon_128x128.png"
@@ -85,7 +88,9 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-secondary text-background px-8 py-4 rounded-full font-semibold text-lg hover:bg-secondary-hover transition-colors">
-                  🚀 免费安装扩展
+                  <Link href="https://chromewebstore.google.com/detail/jbgcgabaeechheccecbaphelkhgabkbp?utm_source=officalSite">
+                    🚀 免费安装扩展
+                  </Link>
                 </button>
                 <button className="border border-border px-8 py-4 rounded-full font-semibold text-lg hover:border-muted transition-colors">
                   📺 观看演示
@@ -312,7 +317,9 @@ export default function Home() {
 
           <div className="space-y-6">
             <button className="bg-secondary text-background px-12 py-6 rounded-full font-bold text-xl hover:bg-secondary-hover transition-colors shadow-2xl">
-              🚀 免费安装 Chrome 扩展
+              <Link href="https://chromewebstore.google.com/detail/jbgcgabaeechheccecbaphelkhgabkbp?utm_source=officalSite">
+                🚀 免费安装 Chrome 扩展
+              </Link>
             </button>
 
             <div className="flex flex-col sm:flex-row justify-center items-center gap-8 text-sm text-muted-foreground">
