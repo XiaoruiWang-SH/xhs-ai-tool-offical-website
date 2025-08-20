@@ -51,7 +51,18 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="text-4xl lg:text-6xl font-bold leading-tight">
-                  创建<span className="text-secondary">爆款</span>
+                  <div className='flex items-center gap-2.5'>
+                    <Image
+                      className="relative bottom-2"
+                      src="/icon_128x128.png"
+                      width={80}
+                      height={80}
+                      alt="Picture of the author"
+                    />
+                    <div>
+                      创建<span className="text-secondary">爆款</span>
+                    </div>
+                  </div>
                   <div />
                   小红书内容
                   <div />
@@ -289,7 +300,7 @@ export default function Home() {
       {/* Download Section */}
       <section
         id="download"
-        className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-secondary/10 to-primary/10"
+        className="py-20 px-4 sm:px-6 lg:px-8 from-secondary/10 to-primary/10"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
