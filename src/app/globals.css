@@ -3,11 +3,39 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Theme Colors */
+  --primary: #ff6b35;
+  --primary-hover: #e55a2e;
+  --secondary: #ffd23f;
+  --secondary-hover: #e6bd39;
+  --accent: #4ade80;
+  --accent-hover: #22c55e;
+  --muted: #6b7280;
+  --muted-foreground: #9ca3af;
+  --border: #e5e7eb;
+  --input: #f9fafb;
+  --ring: #3b82f6;
+  --destructive: #ef4444;
+  --destructive-hover: #dc2626;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-hover: var(--destructive-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +44,21 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    
+    /* Dark Theme Colors */
+    --primary: #ff6b35;
+    --primary-hover: #ff8559;
+    --secondary: #ffd23f;
+    --secondary-hover: #ffdd5e;
+    --accent: #4ade80;
+    --accent-hover: #6ee7a8;
+    --muted: #9ca3af;
+    --muted-foreground: #6b7280;
+    --border: #374151;
+    --input: #1f2937;
+    --ring: #60a5fa;
+    --destructive: #f87171;
+    --destructive-hover: #fca5a5;
   }
 }
 
