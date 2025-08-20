@@ -147,6 +147,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Demo Section */}
+      <section id="demo" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+              看看 AI 如何<span className="text-secondary">改变</span>内容创作
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              AI 驱动的一站式工作流 • 从内容生成到手机展示，完整的创作流程演示
+            </p>
+          </div>
+
+          <div className="flex gap-8 items-start">
+            {/* Content Generation Demo */}
+            <div className="flex-[1.25] space-y-6">
+              <div className="bg-muted/20 p-6 rounded-2xl border border-border">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center">
+                  <span className="mr-3">📝</span>
+                  智能内容生成
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  上传图片，AI 自动分析并生成吸引人的标题和文案内容
+                </p>
+                <video
+                  className="w-full object-contain rounded-xl border border-border"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/postNote.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            {/* Mobile Display Demo */}
+            <div className="flex-[0.49] space-y-6">
+              <div className="bg-muted/20 p-6 rounded-2xl border border-border">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center">
+                  <span className="mr-3">📱</span>
+                  手机端完美展示
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  发布成功后在手机端的真实展示效果，确保内容质量
+                </p>
+                <video
+                  className="w-full object-contain rounded-xl border border-border"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/showNoteOnPhone.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* AI Workflow Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -154,9 +214,7 @@ export default function Home() {
           <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-3xl p-8 border border-border/50">
             {/* 工作流程标题 */}
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-3">
-                🔄 AI 驱动的一条龙工作流
-              </h3>
+              <h3 className="text-2xl font-bold mb-3">AI 驱动的一站式工作流</h3>
               <p className="text-muted-foreground">
                 从内容创作到发布，无需复制粘贴的智能化体验
               </p>
@@ -243,9 +301,9 @@ export default function Home() {
                     <Image
                       src="/xhs-extension-page.png"
                       alt="小红书扩展界面"
-                      width={400}
-                      height={320}
-                      className="w-full h-auto object-cover"
+                      width={400 * 0.8}
+                      height={320 * 0.8}
+                      className="object-contain"
                     />
                   </div>
                 </div>
@@ -348,66 +406,6 @@ export default function Home() {
               <p className="text-muted-foreground leading-relaxed">
                 API 密钥仅存储在本地浏览器，数据隐私得到完全保障，安全可靠
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Demo Section */}
-      <section id="demo" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-              看看 AI 如何<span className="text-secondary">改变</span>内容创作
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              从内容生成到手机展示，完整的创作流程演示
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Content Generation Demo */}
-            <div className="space-y-6">
-              <div className="bg-muted/20 p-6 rounded-2xl border border-border">
-                <h3 className="text-2xl font-semibold mb-4 flex items-center">
-                  <span className="mr-3">📝</span>
-                  智能内容生成
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  上传图片，AI 自动分析并生成吸引人的标题和文案内容
-                </p>
-                <video
-                  className="w-full h-auto rounded-xl border border-border"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="/postNote.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-
-            {/* Mobile Display Demo */}
-            <div className="space-y-6">
-              <div className="bg-muted/20 p-6 rounded-2xl border border-border">
-                <h3 className="text-2xl font-semibold mb-4 flex items-center">
-                  <span className="mr-3">📱</span>
-                  手机端完美展示
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  发布成功后在手机端的真实展示效果，确保内容质量
-                </p>
-                <video
-                  className="w-full h-auto rounded-xl border border-border"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="/showNoteOnPhone.mp4" type="video/mp4" />
-                </video>
-              </div>
             </div>
           </div>
         </div>
