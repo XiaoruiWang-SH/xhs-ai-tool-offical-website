@@ -421,15 +421,24 @@ export default function Home() {
             </div>
 
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">
+              <Link
+                href="/terms-of-service"
+                className="hover:text-foreground transition-colors"
+              >
                 使用条款
-              </a>
-              <a href="#" className="hover:text-foreground transition-colors">
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="hover:text-foreground transition-colors"
+              >
                 隐私政策
-              </a>
-              <a href="#" className="hover:text-foreground transition-colors">
+              </Link>
+              <Link
+                href="https://github.com/XiaoruiWang-SH/xhs-ai-tool"
+                className="hover:text-foreground transition-colors"
+              >
                 联系我们
-              </a>
+              </Link>
             </div>
           </div>
 
