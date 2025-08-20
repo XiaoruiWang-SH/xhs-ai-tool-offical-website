@@ -90,18 +90,104 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <video
-                className="w-full h-auto rounded-2xl shadow-2xl border border-border"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/postNote.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute -bottom-4 -right-4 bg-secondary text-background px-4 py-2 rounded-full font-semibold text-sm">
-                ✨ AI 智能生成
+              {/* AI 能力展示区域 */}
+              <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-3xl p-8 border border-border/50">
+                {/* 工作流程标题 */}
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold mb-3">🔄 AI 驱动的一条龙工作流</h3>
+                  <p className="text-muted-foreground">从内容创作到发布，无需复制粘贴的智能化体验</p>
+                </div>
+
+                {/* 三步骤展示 */}
+                <div className="space-y-6">
+                  {/* 第一步：文案生成 */}
+                  <div className="flex items-start gap-6 p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                        <span className="text-2xl">📝</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-3">
+                        <h4 className="text-lg font-semibold">步骤一：智能文案生成</h4>
+                        <span className="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">一键生成</span>
+                      </div>
+                      <p className="text-muted-foreground text-sm mb-4">AI 分析图片内容，自动生成吸引眼球的标题和正文，让内容创作效率提升10倍</p>
+                      <div className="relative overflow-hidden rounded-xl border border-border">
+                        <Image
+                          src="/xhs-post.png"
+                          alt="小红书文案生成界面"
+                          width={400}
+                          height={200}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 第二步：评论生成 */}
+                  <div className="flex items-start gap-6 p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                        <span className="text-2xl">💬</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-3">
+                        <h4 className="text-lg font-semibold">步骤二：AI 评论助手</h4>
+                        <span className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">智能互动</span>
+                      </div>
+                      <p className="text-muted-foreground text-sm mb-4">智能分析笔记内容，生成个性化、有价值的互动评论，提升社交互动效果</p>
+                      <div className="relative overflow-hidden rounded-xl border border-border">
+                        <Image
+                          src="/xhs-comment.png"
+                          alt="小红书评论生成界面"
+                          width={400}
+                          height={150}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 第三步：扩展界面 */}
+                  <div className="flex items-start gap-6 p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <span className="text-2xl">🚀</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-3">
+                        <h4 className="text-lg font-semibold">步骤三：一键应用发布</h4>
+                        <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">无缝集成</span>
+                      </div>
+                      <p className="text-muted-foreground text-sm mb-4">Chrome 侧边栏设计，内容直接插入编辑页面，告别复制粘贴，流水线式创作体验</p>
+                      <div className="relative overflow-hidden rounded-xl border border-border">
+                        <Image
+                          src="/xhs-extension-page.png"
+                          alt="小红书扩展界面"
+                          width={400}
+                          height={300}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 底部特色标签 */}
+                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                  <span className="px-4 py-2 bg-secondary/10 text-secondary text-sm rounded-full flex items-center gap-2">
+                    ⚡ 10倍效率提升
+                  </span>
+                  <span className="px-4 py-2 bg-accent/10 text-accent text-sm rounded-full flex items-center gap-2">
+                    🎯 零复制粘贴
+                  </span>
+                  <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full flex items-center gap-2">
+                    🤖 多AI模型支持
+                  </span>
+                </div>
               </div>
             </div>
           </div>
