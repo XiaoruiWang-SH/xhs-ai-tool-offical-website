@@ -79,11 +79,61 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  专业的 AI 内容创作助手，智能生成高质量文案、标题和评论。 集成
-                  OpenAI GPT、Claude、通义千问等主流 AI
-                  大模型，让内容创作变得简单高效。
-                </p>
+                <div className="space-y-6">
+                  {/* 核心价值主张 */}
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    <span className="text-secondary font-semibold">
+                      专为小红书创作者打造
+                    </span>
+                    的 AI 内容助手， 帮您轻松创作出
+                    <span className="text-accent font-semibold">10万+阅读</span>
+                    的爆款内容
+                  </p>
+
+                  {/* 核心功能亮点 */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex items-center space-x-3 p-3 rounded-lg bg-secondary/5 border border-secondary/10">
+                      <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center">
+                        <span className="text-sm">⚡</span>
+                      </div>
+                      <div>
+                        <div className="font-medium text-foreground">
+                          3秒生成文案
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          AI智能分析图片内容
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center space-x-3 p-3 rounded-lg bg-accent/5 border border-accent/10">
+                      <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
+                        <span className="text-sm">🎯</span>
+                      </div>
+                      <div>
+                        <div className="font-medium text-foreground">
+                          爆款标题优化
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          多AI模型协同创作
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 技术支持说明 */}
+                  <div className="flex items-center justify-center space-x-6 text-sm text-muted-foreground rounded-lg p-3">
+                    <span className="flex items-center">
+                      <span className="text-green-500 mr-1">✓</span>开源免费
+                    </span>
+                    <span className="flex items-center">
+                      <span className="text-green-500 mr-1">✓</span>数据安全
+                    </span>
+                    <span className="flex items-center">
+                      <span className="text-green-500 mr-1">✓</span>多AI支持
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -93,7 +143,21 @@ export default function Home() {
                   </Link>
                 </button>
                 <button className="border border-border px-8 py-4 rounded-full font-semibold text-lg hover:border-muted transition-colors">
-                  📺 观看演示
+                  <Link
+                    href="https://github.com/XiaoruiWang-SH/xhs-ai-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="flex items-center gap-1.5">
+                      <Image
+                        src="/github.svg"
+                        width={30}
+                        height={30}
+                        alt="Picture of the author"
+                      />
+                      <div>GitHub 仓库</div>
+                    </div>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -345,8 +409,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <span className="text-xl font-bold text-secondary">🤖</span>
-              <span className="ml-2 text-lg font-semibold">
+              <Image
+                src="/icon_128x128.png"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+              />
+              <span className="ml-1 text-lg font-semibold">
                 小红书 AI 小帮手
               </span>
             </div>
@@ -365,7 +434,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted">
-            <p>© 2024 小红书 AI 工具小帮手. 专为小红书创作者设计的 AI 助手.</p>
+            <p>© 2025 小红书 AI 工具小帮手. 专为小红书创作者设计的 AI 助手.</p>
           </div>
         </div>
       </footer>
