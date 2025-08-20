@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
-> **小红书 AI 工具小帮手的官方宣传网站** - 此项目是小红书 AI 工具小帮手 Chrome 扩展的官网, 使用 Next.js 15、React 19 和 Tailwind CSS 4 构建，展示 Chrome 扩展的功能特色并提供下载服务。
+> **小红书 AI 工具小帮手的官方宣传网站** - 此项目是[小红书 AI 工具小帮手](https://github.com/XiaoruiWang-SH/xhs-ai-tool) Chrome 扩展的官网, 使用 Next.js 15、React 19 和 Tailwind CSS 4 构建，展示 Chrome 扩展的功能特色并提供下载服务。
 
 🌍 **网站访问**: [https://your-domain.com](https://your-domain.com)  
 🔗 **Chrome 扩展**: [GitHub 仓库](https://github.com/XiaoruiWang-SH/xhs-ai-tool)  
@@ -24,7 +24,6 @@
 
 ## 📞 联系我们
 
-- **邮箱**: [wallace.w.x.r@gmail.com](mailto:wallace.w.x.r@gmail.com)
 - **GitHub**: [https://github.com/XiaoruiWang-SH/xhs-ai-tool](https://github.com/XiaoruiWang-SH/xhs-ai-tool)
 - **问题反馈**: [GitHub Issues](https://github.com/XiaoruiWang-SH/xhs-ai-tool/issues)
 
