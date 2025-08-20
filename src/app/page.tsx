@@ -90,20 +90,20 @@ export default function Home() {
 
             {/* 示例展示区域 - 扇形卡牌展开 */}
             <div className="relative">
-              <div className="relative w-full max-w-4xl mx-auto lg:mx-0 h-96 flex items-center justify-center">
+              <div className="relative top-5 w-full max-w-4xl mx-auto lg:mx-0 h-96 flex items-center justify-center">
                 {/* 第一张卡片 - 左侧 */}
-                <div className="absolute transform -rotate-12 -translate-x-48 hover:rotate-0 hover:translate-x-0 transition-all duration-500 z-10">
+                <div className="absolute transform -rotate-12 -translate-x-42 hover:scale-105 transition-all duration-500 z-10">
                   <div className="bg-white rounded-2xl shadow-xl border border-border/20 overflow-hidden">
                     <Image
-                      src="/xhs_note1.jpg"
-                      alt="小红书生成文案示例1"
+                      src="/xhs_note2.jpg"
+                      alt="小红书生成文案示例2"
                       width={190 * 1.2}
                       height={412 * 1.2}
                       className="object-contain"
                     />
                     {/* 小红书风格标签 */}
-                    <div className="absolute top-4 left-4 bg-secondary/90 backdrop-blur-sm text-background px-3 py-1 rounded-full text-sm font-medium">
-                      ✨ AI生成文案
+                    <div className="absolute top-0 left-15 bg-accent/90 backdrop-blur-sm text-background px-3 py-1 rounded-full text-sm font-medium">
+                      🌟 智能优化
                     </div>
                   </div>
                 </div>
@@ -112,21 +112,21 @@ export default function Home() {
                 <div className="relative transform hover:scale-105 transition-all duration-300 z-20">
                   <div className="bg-white rounded-2xl shadow-2xl border border-border/20 overflow-hidden">
                     <Image
-                      src="/xhs_note2.jpg"
-                      alt="小红书生成文案示例2"
+                      src="/xhs_note1.jpg"
+                      alt="小红书生成文案示例1"
                       width={190 * 1.2}
-                      height={412 * 1.4}
+                      height={412 * 1.2}
                       className="object-contain"
                     />
                     {/* 小红书风格标签 */}
-                    <div className="absolute top-4 left-4 bg-accent/90 backdrop-blur-sm text-background px-3 py-1 rounded-full text-sm font-medium">
-                      🌟 智能优化
+                    <div className="absolute top-1 left-15 bg-secondary/90 backdrop-blur-sm text-background px-3 py-1 rounded-full text-sm font-medium">
+                      ✨ AI生成文案
                     </div>
                   </div>
                 </div>
 
                 {/* 第三张卡片 - 右侧 */}
-                <div className="absolute transform rotate-12 translate-x-48 hover:rotate-0 hover:translate-x-0 transition-all duration-500 z-10">
+                <div className="absolute transform rotate-12 translate-x-42 hover:scale-105 transition-all duration-500 z-10">
                   <div className="bg-white rounded-2xl shadow-xl border border-border/20 overflow-hidden">
                     <Image
                       src="/xhs_comment.jpg"
@@ -136,12 +136,11 @@ export default function Home() {
                       className="object-contain"
                     />
                     {/* 小红书风格标签 */}
-                    <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <div className="absolute top-1 left-15 bg-primary/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
                       💬 AI评论
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
