@@ -9,7 +9,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Image
-                className='relative bottom-1'
+                className="relative bottom-1"
                 src="/redNote_icon.svg"
                 width={60}
                 height={60}
@@ -50,7 +50,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   创建<span className="text-secondary">爆款</span>
                   <br />
@@ -89,106 +88,182 @@ export default function Home() {
               </div>
             </div>
 
+            {/* 示例展示区域 - 扇形卡牌展开 */}
             <div className="relative">
-              {/* AI 能力展示区域 */}
-              <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-3xl p-8 border border-border/50">
-                {/* 工作流程标题 */}
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold mb-3">🔄 AI 驱动的一条龙工作流</h3>
-                  <p className="text-muted-foreground">从内容创作到发布，无需复制粘贴的智能化体验</p>
-                </div>
-
-                {/* 三步骤展示 */}
-                <div className="space-y-6">
-                  {/* 第一步：文案生成 */}
-                  <div className="flex items-start gap-6 p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                        <span className="text-2xl">📝</span>
-                      </div>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 mb-3">
-                        <h4 className="text-lg font-semibold">步骤一：智能文案生成</h4>
-                        <span className="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">一键生成</span>
-                      </div>
-                      <p className="text-muted-foreground text-sm mb-4">AI 分析图片内容，自动生成吸引眼球的标题和正文，让内容创作效率提升10倍</p>
-                      <div className="relative overflow-hidden rounded-xl border border-border">
-                        <Image
-                          src="/xhs-post.png"
-                          alt="小红书文案生成界面"
-                          width={400}
-                          height={200}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* 第二步：评论生成 */}
-                  <div className="flex items-start gap-6 p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                        <span className="text-2xl">💬</span>
-                      </div>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 mb-3">
-                        <h4 className="text-lg font-semibold">步骤二：AI 评论助手</h4>
-                        <span className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">智能互动</span>
-                      </div>
-                      <p className="text-muted-foreground text-sm mb-4">智能分析笔记内容，生成个性化、有价值的互动评论，提升社交互动效果</p>
-                      <div className="relative overflow-hidden rounded-xl border border-border">
-                        <Image
-                          src="/xhs-comment.png"
-                          alt="小红书评论生成界面"
-                          width={400}
-                          height={150}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* 第三步：扩展界面 */}
-                  <div className="flex items-start gap-6 p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                        <span className="text-2xl">🚀</span>
-                      </div>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 mb-3">
-                        <h4 className="text-lg font-semibold">步骤三：一键应用发布</h4>
-                        <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">无缝集成</span>
-                      </div>
-                      <p className="text-muted-foreground text-sm mb-4">Chrome 侧边栏设计，内容直接插入编辑页面，告别复制粘贴，流水线式创作体验</p>
-                      <div className="relative overflow-hidden rounded-xl border border-border">
-                        <Image
-                          src="/xhs-extension-page.png"
-                          alt="小红书扩展界面"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
+              <div className="relative w-full max-w-4xl mx-auto lg:mx-0 h-96 flex items-center justify-center">
+                {/* 第一张卡片 - 左侧 */}
+                <div className="absolute transform -rotate-12 -translate-x-48 hover:rotate-0 hover:translate-x-0 transition-all duration-500 z-10">
+                  <div className="bg-white rounded-2xl shadow-xl border border-border/20 overflow-hidden">
+                    <Image
+                      src="/xhs_note1.jpg"
+                      alt="小红书生成文案示例1"
+                      width={190 * 1.2}
+                      height={412 * 1.2}
+                      className="object-contain"
+                    />
+                    {/* 小红书风格标签 */}
+                    <div className="absolute top-4 left-4 bg-secondary/90 backdrop-blur-sm text-background px-3 py-1 rounded-full text-sm font-medium">
+                      ✨ AI生成文案
                     </div>
                   </div>
                 </div>
 
-                {/* 底部特色标签 */}
-                <div className="mt-8 flex flex-wrap justify-center gap-3">
-                  <span className="px-4 py-2 bg-secondary/10 text-secondary text-sm rounded-full flex items-center gap-2">
-                    ⚡ 10倍效率提升
-                  </span>
-                  <span className="px-4 py-2 bg-accent/10 text-accent text-sm rounded-full flex items-center gap-2">
-                    🎯 零复制粘贴
-                  </span>
-                  <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full flex items-center gap-2">
-                    🤖 多AI模型支持
-                  </span>
+                {/* 第二张卡片 - 中间 */}
+                <div className="relative transform hover:scale-105 transition-all duration-300 z-20">
+                  <div className="bg-white rounded-2xl shadow-2xl border border-border/20 overflow-hidden">
+                    <Image
+                      src="/xhs_note2.jpg"
+                      alt="小红书生成文案示例2"
+                      width={190 * 1.2}
+                      height={412 * 1.4}
+                      className="object-contain"
+                    />
+                    {/* 小红书风格标签 */}
+                    <div className="absolute top-4 left-4 bg-accent/90 backdrop-blur-sm text-background px-3 py-1 rounded-full text-sm font-medium">
+                      🌟 智能优化
+                    </div>
+                  </div>
+                </div>
+
+                {/* 第三张卡片 - 右侧 */}
+                <div className="absolute transform rotate-12 translate-x-48 hover:rotate-0 hover:translate-x-0 transition-all duration-500 z-10">
+                  <div className="bg-white rounded-2xl shadow-xl border border-border/20 overflow-hidden">
+                    <Image
+                      src="/xhs_comment.jpg"
+                      alt="小红书生成评论示例"
+                      width={190 * 1.2}
+                      height={412 * 1.2}
+                      className="object-contain"
+                    />
+                    {/* 小红书风格标签 */}
+                    <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                      💬 AI评论
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Workflow Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* AI 能力展示区域 */}
+          <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-3xl p-8 border border-border/50">
+            {/* 工作流程标题 */}
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-3">
+                🔄 AI 驱动的一条龙工作流
+              </h3>
+              <p className="text-muted-foreground">
+                从内容创作到发布，无需复制粘贴的智能化体验
+              </p>
+            </div>
+
+            {/* 三步骤展示 - 两列布局 */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* 左列：步骤一和步骤二 */}
+              <div className="space-y-6">
+                {/* 第一步：文案生成 */}
+                <div className="p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-secondary/30 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                      <span className="text-xl">📝</span>
+                    </div>
+                    <h4 className="text-lg font-semibold">
+                      步骤一：智能文案生成
+                    </h4>
+                    <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs rounded-full">
+                      一键生成
+                    </span>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    AI 分析图片内容，自动生成吸引眼球的标题和正文
+                  </p>
+                  <div className="relative overflow-hidden rounded-xl border border-border">
+                    <Image
+                      src="/xhs-post.png"
+                      alt="小红书文案生成界面"
+                      width={350}
+                      height={180}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* 第二步：评论生成 */}
+                <div className="p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-accent/30 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-accent/10 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                      <span className="text-xl">💬</span>
+                    </div>
+                    <h4 className="text-lg font-semibold">
+                      步骤二：AI 评论助手
+                    </h4>
+                    <span className="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full">
+                      智能互动
+                    </span>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    智能分析笔记内容，生成个性化、有价值的互动评论
+                  </p>
+                  <div className="relative overflow-hidden rounded-xl border border-border">
+                    <Image
+                      src="/xhs-comment.png"
+                      alt="小红书评论生成界面"
+                      width={350}
+                      height={120}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
                 </div>
               </div>
+
+              {/* 右列：步骤三 */}
+              <div className="flex items-center">
+                <div className="w-full p-6 bg-background/50 rounded-2xl border border-border/30 hover:border-primary/30 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <span className="text-xl">🚀</span>
+                    </div>
+                    <h4 className="text-lg font-semibold">
+                      步骤三：一键应用发布
+                    </h4>
+                    <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                      无缝集成
+                    </span>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    Chrome
+                    侧边栏设计，内容直接插入编辑页面，告别复制粘贴，流水线式创作体验
+                  </p>
+                  <div className="relative overflow-hidden rounded-xl border border-border">
+                    <Image
+                      src="/xhs-extension-page.png"
+                      alt="小红书扩展界面"
+                      width={400}
+                      height={320}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 底部特色标签 */}
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <span className="px-4 py-2 bg-secondary/10 text-secondary text-sm rounded-full flex items-center gap-2">
+                ⚡ 10倍效率提升
+              </span>
+              <span className="px-4 py-2 bg-accent/10 text-accent text-sm rounded-full flex items-center gap-2">
+                🎯 零复制粘贴
+              </span>
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full flex items-center gap-2">
+                🤖 多AI模型支持
+              </span>
             </div>
           </div>
         </div>
