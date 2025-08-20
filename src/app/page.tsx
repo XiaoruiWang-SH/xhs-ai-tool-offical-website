@@ -50,13 +50,21 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                <div className="text-4xl lg:text-6xl font-bold leading-tight">
                   创建<span className="text-secondary">爆款</span>
-                  <br />
+                  <div />
                   小红书内容
-                  <br />
-                  一键搞定
-                </h1>
+                  <div />
+                  <div className="flex items-center gap-2.5">
+                    <div>一键搞定 </div>
+                    <Image
+                      src="/aiAuto_icon.svg"
+                      width={120}
+                      height={120}
+                      alt="Picture of the author"
+                    />
+                  </div>
+                </div>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   专业的 AI 内容创作助手，智能生成高质量文案、标题和评论。 集成
                   OpenAI GPT、Claude、通义千问等主流 AI
