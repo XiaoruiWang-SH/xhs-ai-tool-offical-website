@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -6,13 +8,34 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-secondary">🤖</span>
-              <span className="ml-2 text-lg font-semibold">小红书 AI 小帮手</span>
+              <Image
+                className='relative bottom-1'
+                src="/redNote_icon.svg"
+                width={60}
+                height={60}
+                alt="Picture of the author"
+              />
+              <span className="ml-2 text-lg font-semibold">AI 小帮手</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#features" className="hover:text-secondary transition-colors">功能特色</a>
-              <a href="#demo" className="hover:text-secondary transition-colors">演示视频</a>
-              <a href="#download" className="hover:text-secondary transition-colors">立即下载</a>
+              <a
+                href="#features"
+                className="hover:text-secondary transition-colors"
+              >
+                功能特色
+              </a>
+              <a
+                href="#demo"
+                className="hover:text-secondary transition-colors"
+              >
+                演示视频
+              </a>
+              <a
+                href="#download"
+                className="hover:text-secondary transition-colors"
+              >
+                立即下载
+              </a>
             </div>
             <button className="bg-secondary text-background px-6 py-2 rounded-full font-medium hover:bg-secondary-hover transition-colors">
               立即安装
@@ -28,19 +51,24 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="inline-flex items-center px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20">
-                  <span className="text-secondary text-sm font-medium">⚡ 由 GPT-4 驱动</span>
+                  <span className="text-secondary text-sm font-medium">
+                    ⚡ 由 GPT-4 驱动
+                  </span>
                 </div>
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   创建<span className="text-secondary">爆款</span>
-                  <br />小红书内容
-                  <br />一键搞定
+                  <br />
+                  小红书内容
+                  <br />
+                  一键搞定
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  专业的 AI 内容创作助手，智能生成高质量文案、标题和评论。
-                  集成 OpenAI GPT、Claude、通义千问等主流 AI 大模型，让内容创作变得简单高效。
+                  专业的 AI 内容创作助手，智能生成高质量文案、标题和评论。 集成
+                  OpenAI GPT、Claude、通义千问等主流 AI
+                  大模型，让内容创作变得简单高效。
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-secondary text-background px-8 py-4 rounded-full font-semibold text-lg hover:bg-secondary-hover transition-colors">
                   🚀 免费安装扩展
@@ -57,7 +85,11 @@ export default function Home() {
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500"></div>
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-red-500 to-pink-500"></div>
                 </div>
-                <span>已有 <span className="text-foreground font-semibold">10,000+</span> 创作者在使用</span>
+                <span>
+                  已有{' '}
+                  <span className="text-foreground font-semibold">10,000+</span>{' '}
+                  创作者在使用
+                </span>
               </div>
             </div>
 
@@ -85,10 +117,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-              让小红书内容创作<span className="text-secondary">前所未有</span>的简单
+              让小红书内容创作<span className="text-secondary">前所未有</span>
+              的简单
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              从图片分析到文案生成，从标题优化到评论互动，AI 驱动的完整内容创作解决方案
+              从图片分析到文案生成，从标题优化到评论互动，AI
+              驱动的完整内容创作解决方案
             </p>
           </div>
 
@@ -133,7 +167,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-4">多模型支持</h3>
               <p className="text-muted-foreground leading-relaxed">
-                支持 OpenAI GPT、Claude、通义千问等主流 AI 模型，选择最适合的 AI 助手
+                支持 OpenAI GPT、Claude、通义千问等主流 AI 模型，选择最适合的 AI
+                助手
               </p>
             </div>
 
@@ -223,7 +258,10 @@ export default function Home() {
       </section>
 
       {/* Download Section */}
-      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-secondary/10 to-primary/10">
+      <section
+        id="download"
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-secondary/10 to-primary/10"
+      >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             立即开始你的 AI 创作之旅
@@ -236,7 +274,7 @@ export default function Home() {
             <button className="bg-secondary text-background px-12 py-6 rounded-full font-bold text-xl hover:bg-secondary-hover transition-colors shadow-2xl">
               🚀 免费安装 Chrome 扩展
             </button>
-            
+
             <div className="flex flex-col sm:flex-row justify-center items-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center">
                 <span className="text-accent mr-2">✓</span>
@@ -261,16 +299,24 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <span className="text-xl font-bold text-secondary">🤖</span>
-              <span className="ml-2 text-lg font-semibold">小红书 AI 小帮手</span>
+              <span className="ml-2 text-lg font-semibold">
+                小红书 AI 小帮手
+              </span>
             </div>
-            
+
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">使用条款</a>
-              <a href="#" className="hover:text-foreground transition-colors">隐私政策</a>
-              <a href="#" className="hover:text-foreground transition-colors">联系我们</a>
+              <a href="#" className="hover:text-foreground transition-colors">
+                使用条款
+              </a>
+              <a href="#" className="hover:text-foreground transition-colors">
+                隐私政策
+              </a>
+              <a href="#" className="hover:text-foreground transition-colors">
+                联系我们
+              </a>
             </div>
           </div>
-          
+
           <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted">
             <p>© 2024 小红书 AI 工具小帮手. 专为小红书创作者设计的 AI 助手.</p>
           </div>
