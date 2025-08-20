@@ -50,11 +50,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20">
-                  <span className="text-secondary text-sm font-medium">
-                    ⚡ 由 GPT-4 驱动
-                  </span>
-                </div>
+                
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   创建<span className="text-secondary">爆款</span>
                   <br />
