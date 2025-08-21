@@ -8,7 +8,7 @@
 
 > **小红书 AI 工具小帮手的官方宣传网站** - 此项目是[小红书 AI 工具小帮手](https://github.com/XiaoruiWang-SH/xhs-ai-tool) Chrome 扩展的官网, 使用 Next.js 15、React 19 和 Tailwind CSS 4 构建，展示 Chrome 扩展的功能特色并提供下载服务。
 
-🌍 **网站访问**: [https://your-domain.com](https://your-domain.com)  
+🌍 **网站访问**: [https://mynotehelper.com/](https://mynotehelper.com/)  
 🔗 **Chrome 扩展**: [GitHub 仓库](https://github.com/XiaoruiWang-SH/xhs-ai-tool)  
 📦 **应用商店**: [Chrome Web Store](https://chromewebstore.google.com/detail/jbgcgabaeechheccecbaphelkhgabkbp)
 
